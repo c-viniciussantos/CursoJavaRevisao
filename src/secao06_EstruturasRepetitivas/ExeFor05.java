@@ -27,6 +27,8 @@ public class ExeFor05 {
 				fat *= 1;
 			}
 			
+			System.out.println("Fatorial = "+ fat);
+			
 		}
 
 		sc.close();

@@ -33,7 +33,7 @@ public class Exe05 {
 			
 			double total = (qtd1 * preco1) + (qtd2 * preco2);
 			
-			System.out.printf("Total a pagar R$ %.2f", total);
+			System.out.printf("Total a pagar referente aos produtos: "+id1+" e "+id2+" = R$ %.2f", total);
 		
 		sc.close();
 	}

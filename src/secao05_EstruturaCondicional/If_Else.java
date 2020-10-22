@@ -18,7 +18,8 @@ public class If_Else {
 		} else {
 			System.out.println("Boa noite!");
 		}
-
+		
+		sc.close();
 	}
 
 }

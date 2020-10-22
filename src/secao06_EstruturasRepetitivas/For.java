@@ -14,7 +14,8 @@ public class For {
 		
 		System.out.println();
 		for(int i = 1; i <= 10; i++) {
-			System.out.println(x+" X "+ i +" = "+ (soma = x * i));
+			soma = x * i;
+			System.out.println(x+" X "+ i +" = "+ soma);
 		}
 		
 		sc.close();
