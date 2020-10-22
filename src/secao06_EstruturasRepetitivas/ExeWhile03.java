@@ -2,7 +2,7 @@ package secao06_EstruturasRepetitivas;
 
 import java.util.Scanner;
 
-public class Exe03 {
+public class ExeWhile03 {
 
 	public static void main(String[] args) {
 
