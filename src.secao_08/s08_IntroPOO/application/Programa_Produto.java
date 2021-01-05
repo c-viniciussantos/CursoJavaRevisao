@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 import s08_IntroPOO.entities.Produto;
 
-public class Program_Product {
+public class Programa_Produto {
 
 	public static void main(String[] args) {
 		

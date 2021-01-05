@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 import s08_IntroPOO.entities.Triangulo;
 
-public class Program_Triangle {
+public class Programa_Triangulo {
 
 	public static void main(String[] args) {
 		
