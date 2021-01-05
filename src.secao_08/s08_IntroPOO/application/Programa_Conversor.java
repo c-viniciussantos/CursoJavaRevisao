@@ -15,9 +15,9 @@ public class Programa_Conversor {
 		System.out.print("Quanto dolares voce quer comprar?: R$");
 		double valor = sc.nextDouble();
 		
-		Conversor con = new Conversor();
 		
-		System.out.printf("Total em dolares que você comprou $%.2f", con.conversorReais(valor));
+		//Membros estaticos podem ser chamados direto da classe
+		System.out.printf("Total em dolares que você comprou $%.2f", Conversor.conversorReais(valor));
 		
 		sc.close();
 	}
