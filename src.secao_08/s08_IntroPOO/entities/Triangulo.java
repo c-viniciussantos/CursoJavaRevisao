@@ -1,7 +1,5 @@
 package s08_IntroPOO.entities;
 
-import javax.swing.JOptionPane;
-
 public class Triangulo {
 
 	private Double a;

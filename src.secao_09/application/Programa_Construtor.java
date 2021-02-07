@@ -13,7 +13,7 @@ public class Programa_Construtor {
 		Scanner sc = new Scanner(System.in);
 
 		//Pode chamar o construtor obrigando os parametros
-		Construtor cons1 = new Construtor("Exemplo 1", "Exemplo 2", "Exemplo 3", "Exemplo 4");
+		//Construtor cons1 = new Construtor("Exemplo 1", "Exemplo 2", "Exemplo 3", "Exemplo 4");
 		
 		//Pode chamar o construtor sem obrigar os parametros
 		Construtor cons2 = new Construtor(); 

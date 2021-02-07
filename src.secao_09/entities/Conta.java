@@ -2,8 +2,6 @@ package entities;
 
 import java.util.Scanner;
 
-import com.sun.xml.internal.ws.api.pipe.NextAction;
-
 public class Conta {
 	
 	Scanner sc = new Scanner(System.in);
