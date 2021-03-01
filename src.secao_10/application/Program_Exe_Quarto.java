@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 import entities.Quarto;
 
-public class Programa_Exe_Quarto {
+public class Program_Exe_Quarto {
 
 	public static void main(String[] args) {
 		

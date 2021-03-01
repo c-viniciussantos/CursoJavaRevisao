@@ -3,7 +3,7 @@ package application;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Programa_Vetor {
+public class Program_Vetor {
 
 	public static void main(String[] args) {
 
