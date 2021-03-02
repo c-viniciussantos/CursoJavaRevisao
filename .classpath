@@ -5,7 +5,6 @@
 	<classpathentry kind="src" path="src.secao_09"/>
 	<classpathentry kind="src" path="src.secao_10"/>
 	<classpathentry kind="src" path="src.secao_11"/>
-	<classpathentry kind="src" path="src.secao_12"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
