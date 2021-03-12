@@ -3,6 +3,8 @@ package entities;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
+import java.util.Locale;
+import java.util.Scanner;
 
 import entities.enums.Experiencia;
 
@@ -11,22 +13,23 @@ public class Trabalhador {
 	private String nome;
 	private Experiencia level;
 	private Double salario;
-	
-	//Composições de objetos
+
+	// Declarando composição
 	private Departamento departamento;
-	private List<Contrato> contratos = new ArrayList<Contrato>();
-	
+	private List<Contrato> contratos = new ArrayList<>();
+
 	public Trabalhador() {
 	}
 
-	//No construtor não pode ter atributos que são listas, ela deve ser iniciada quando for declarado a variavel
+	// No construtor não pode ter atributos que são listas, ela deve ser iniciada
+	// quando for declarado a variavel
 	public Trabalhador(String nome, Experiencia level, Double salario, Departamento departamento) {
 		this.nome = nome;
 		this.level = level;
 		this.salario = salario;
 		this.departamento = departamento;
 	}
-	
+
 	public String getNome() {
 		return nome;
 	}
@@ -66,28 +69,24 @@ public class Trabalhador {
 	public void addContrato(Contrato contrato) {
 		contratos.add(contrato);
 	}
-	
+
 	public void removerContrato(Contrato contrato) {
 		contratos.remove(contrato);
 	}
-	
-	public void renda(int ano, int mes) {
-		
-		double soma = salario;
+
+	public Double renda(int mes, int ano) {
+
+		Double soma = salario;
 		Calendar cal = Calendar.getInstance();
-		
-		for(Contrato ctt : contratos) {
-			cal.setTime(ctt.getDate());
+
+		for (Contrato ctt : contratos) {
+			cal.setTime(ctt.getData());
 			int year = cal.get(Calendar.YEAR);
-			int month = cal.get(Calendar.MONTH);
-			if(ano == year && mes == month){
-				soma += ctt.totalValue();
+			int month = 1 + cal.get(Calendar.MONTH);
+			if (mes == month && ano == year) {
+				soma += ctt.valorTotal();
 			}
 		}
-	}
-
-	@Override
-	public String toString() {
-		return "Trabalhador Nome= " + nome + ", Level= " + level + ", Salario= " + salario + ".";
+		return soma;
 	}
 }

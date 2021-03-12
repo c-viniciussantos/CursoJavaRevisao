@@ -8,7 +8,6 @@ public class Departamento {
 	}
 
 	public Departamento(String nome) {
-		super();
 		this.nome = nome;
 	}
 
