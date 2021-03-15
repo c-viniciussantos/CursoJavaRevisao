@@ -2,7 +2,7 @@ package application;
 
 import java.util.Date;
 
-import entities.Pedidos;
+import entities.Pedidos_Enum;
 import entities.enums.StatusPedido;
 
 public class Program_Enum {
@@ -20,7 +20,7 @@ public class Program_Enum {
 		• Referência: https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html*/
 		
 		
-		Pedidos pedido = new Pedidos(125, new Date(), StatusPedido.AGUARDANDO_PAGAMENTO);
+		Pedidos_Enum pedido = new Pedidos_Enum(125, new Date(), StatusPedido.AGUARDANDO_PAGAMENTO);
 		
 		System.out.println(pedido);
 		

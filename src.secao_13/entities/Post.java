@@ -75,7 +75,7 @@ public class Post {
 	@Override
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
-		//acrescentar no final
+		// append = acrescentar no final
 		sb.append(titulo + "\n");
 		sb.append(likes);
 		sb.append(" Likes - ");
