@@ -5,6 +5,7 @@ public class ContaEmpresarial extends Contas{
 	private Double limite;
 	
 	public ContaEmpresarial() {
+		super();
 	}
 
 	//Herança - herdar os atributos de outra classe acrescentando 

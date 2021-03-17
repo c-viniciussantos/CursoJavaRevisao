@@ -4,7 +4,7 @@ public class Contas {
 
 	private Integer id;
 	private String titular;
-	private Double saldo;
+	protected Double saldo;
 	
 	public Contas() {
 	}
