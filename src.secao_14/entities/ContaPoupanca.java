@@ -24,4 +24,13 @@ public class ContaPoupanca extends Contas{
 	public void atualizaSaldo() {
 		saldo += saldo * taxaJuros;
 	}
+	
+	@Override
+	public void saque(Double valor) {
+		if(valor <= saldo) {
+			saldo -= valor;
+		} else {
+			System.out.println("Saldo insuficiente!");
+		}
+	}
 }

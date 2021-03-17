@@ -32,6 +32,16 @@ public class ContaEmpresarial extends Contas{
 	}
 	
 	@Override
+	public void saque(Double valor) {
+		if(valor <= saldo) {
+			super.saque(valor);
+			saldo -= 2.0;
+		} else {
+			System.out.println("Saldo insuficiente!");
+		}
+	}
+	
+	@Override
 	public String toString() {
 		return "ContaEmpresarial: "+ getTitular()
 				+ "\nId: "+ getId()

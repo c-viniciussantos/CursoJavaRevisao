@@ -42,7 +42,7 @@ public class Contas {
 	
 	public void saque(Double valor) {
 		if(valor <= saldo) {
-			saldo -= valor;
+			saldo -= valor + 5.0;
 		} else {
 			System.out.println("Saldo insuficiente!");
 		}
