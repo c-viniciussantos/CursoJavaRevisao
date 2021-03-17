@@ -1,6 +1,6 @@
 package application;
 
-public class Program_ClassesMetodos_Final {
+public final class Program_ClassesMetodos_Final {
 
 	public static void main(String[] args) {
 
