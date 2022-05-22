@@ -30,5 +30,6 @@ public class ProdutoUsado extends Produto_ExeFixacao{
 				+ " (Manufacture date: "
 				+ sdf.format(dataFabricacao)
 				+ ")";
+				
 	}
 }
