@@ -63,7 +63,7 @@ public class Program_ExeResolvido {
 		
 		System.out.println("Pagamentos: ");
 		for(Funcionario func : list) {
-			System.out.println(func.getNome() +" - R$ %.2f"+ func.pagamento());
+			System.out.println(func.getNome() +" - R$"+ func.pagamento());
 		}
 		
 		sc.close();

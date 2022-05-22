@@ -1,22 +1,19 @@
 package entities;
 
-public class Produtos {
+public class Produto_ExeFixacao {
 
 	private String nome;
 	private Double preco;
-	
-	public Produtos() {
-	}
-	
-	public Produtos(String nome, Double preco) {
+
+	public Produto_ExeFixacao(String nome, Double preco) {
 		this.nome = nome;
 		this.preco = preco;
 	}
-	
+
 	public String getNome() {
 		return nome;
 	}
-	
+
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
@@ -29,7 +26,9 @@ public class Produtos {
 		this.preco = preco;
 	}
 	
-	public String priceTag() {
-		return "";
+	public String precoTag() {
+		return nome 
+				+ " $ " 
+				+ String.format("%.2f", preco);
 	}
 }
